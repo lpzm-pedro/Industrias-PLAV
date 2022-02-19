@@ -1,51 +1,92 @@
-/*Reset*/
+//Reset
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/*Estilo General*/
+//Estilo General
 body {
     background-color: $colorBody;
 
     nav {
         background-color: $colorHeader;
     }
-
-    footer {
-        background-color: $colorFooter;
-    }
-
 }
 
-/*Sección Inicio*/
-.bienvenida {
-    h1 {
-        font-size: xx-large;
-        color: rgb(134, 0, 0);
-    }
+a {
+    transition: .3s all ease;
 
-    h2 {
-        font-size: large;
-        color: rgb(200, 0, 0);
+    &:hover,
+    &:focus {
+        text-decoration: none !important;
+        outline: none !important;
     }
 }
 
-/*Sección Contacto*/
+footer {
+    padding: 2em 0;
+    background: $colorFooter;
 
-/*Mapa*/
-.map-responsive {
-    overflow: hidden;
-    padding-bottom: 50%;
-    position: relative;
-    height: 0;
+    a {
+        color: $blanco;
+        text-decoration: none;
+    }
 
-    iframe {
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
+    p {
+        color: rgba(255, 255, 255, .3);
+    }
+
+    .footer-heading {
+        font-size: 30px;
+        color: $blanco;
+        font-weight: 700;
+        margin-bottom: 30px;
+
+        .logo {
+            color: $blanco;
+        }
+    }
+
+    .menu {
+        margin-bottom: 30px;
+
+        a {
+            color: rgba(255, 255, 255, .6);
+            margin: 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    }
+
+    .footer-social {
+        li {
+            list-style: none;
+            margin: 0 10px 0 0;
+            display: inline-block;
+
+            a {
+                color: $grisLight;
+                height: 40px;
+                width: 40px;
+                display: block;
+                background: transparent;
+                border: 1px solid $grisStrong;
+                border-radius: 50%;
+                position: relative;
+
+                ion-icon {
+                    position: absolute;
+                    font-size: 20px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
     }
 }

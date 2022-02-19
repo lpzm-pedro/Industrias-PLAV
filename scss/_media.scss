@@ -1,0 +1,31 @@
+@media screen and (max-width:1200px) {
+    .about-section {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-container {
+        width: 100%;
+        padding: 80px;
+        border-radius: 50px;
+    }
+
+    .blog-posts {
+        justify-content: space-around;
+    }
+
+    .post {
+        width: calc(min(600px, 100%));
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .about-section {
+        padding: 0;
+    }
+
+    .inner-container {
+        padding: 60px;
+    }
+}
