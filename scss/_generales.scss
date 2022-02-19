@@ -12,9 +12,81 @@ body {
     nav {
         background-color: $colorHeader;
     }
+}
 
-    footer {
-        background-color: $colorFooter;
+a {
+    transition: .3s all ease;
+
+    &:hover,
+    &:focus {
+        text-decoration: none !important;
+        outline: none !important;
+    }
+}
+
+footer {
+    padding: 2em 0;
+    background: $colorFooter;
+
+    a {
+        color: $blanco;
+        text-decoration: none;
     }
 
+    p {
+        color: rgba(255, 255, 255, .3);
+    }
+
+    .footer-heading {
+        font-size: 30px;
+        color: $blanco;
+        font-weight: 700;
+        margin-bottom: 30px;
+
+        .logo {
+            color: $blanco;
+        }
+    }
+
+    .menu {
+        margin-bottom: 30px;
+
+        a {
+            color: rgba(255, 255, 255, .6);
+            margin: 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    }
+
+    .footer-social {
+        li {
+            list-style: none;
+            margin: 0 10px 0 0;
+            display: inline-block;
+
+            a {
+                color: $grisLight;
+                height: 40px;
+                width: 40px;
+                display: block;
+                background: transparent;
+                border: 1px solid $grisStrong;
+                border-radius: 50%;
+                position: relative;
+
+                ion-icon {
+                    position: absolute;
+                    font-size: 20px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
 }

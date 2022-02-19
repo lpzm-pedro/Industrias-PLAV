@@ -10,27 +10,21 @@
         content="Empresa dedicada al diseño y fabricación de partes maquinadas para la industria metal-mecánica.">
     <meta name="keywords"
         content="Torneado, Fresado, Rectificado, CNC, 3D, Maquinado, Metales, Cobre, Electrodo, Diseño">
-    <!--Incluyendo Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--Incluyendo Hoja de estilos-->
     <link rel="stylesheet" href="./styles/estilo.css">
 </head>
 
 <body>
-    <!--Barra de navegación-->
     <nav class="navbar navbar-expand-lg navbar-dark shadow">
         <div class="container-fluid px-5">
-            <!--Logo-->
             <a class="navbar-brand" href="./index.html">
                 <img src="./images/logo_preview_rev_1.png" alt="Industrias PLAV">
             </a>
-            <!--Botón collapsable-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!--Elementos navegador-->
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -53,13 +47,9 @@
         </div>
     </nav>
 
-
-
     <div class="container px-4 px-lg-5">
-        <!-- Linea encabezado-->
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
             <div class="col-lg-7">
-                <!--Carrusel-->
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -112,9 +102,7 @@
             </div>
         </div>
 
-        <!-- Tarjetas-->
         <div class="row gx-4 gx-lg-5">
-            <!--Tarjeta 1-->
             <div class="col-md-4 mb-5">
                 <div class="card justify-content-center text-center">
                     <img class="card-img-top d-block w-100 px-5 py-3" src="./images/milling-machine.png" alt="Torneado">
@@ -126,7 +114,6 @@
                             Información</a></div>
                 </div>
             </div>
-            <!--Tarjeta 2-->
             <div class="col-md-4 mb-5">
                 <div class="card justify-content-center text-center">
                     <img class="card-img-top d-block w-100 px-5 py-3" src="./images/turning-machine.png" alt="Torno">
@@ -134,11 +121,10 @@
                         <h2 class="card-title">Fresado</h2>
                         <p class="card-text text-center">Mecanizado de piezas rectangulares y barrenados.</p>
                     </div>
-                    <div class="card-footer"><a class="boton boton--gris btn-sm" href="./sections/servicios.html">Más
+                    <div class="card-footer"><a class="boton boton--rojo btn-sm" href="./sections/servicios.html">Más
                             Información</a></div>
                 </div>
             </div>
-            <!--Tarjeta 3-->
             <div class="col-md-4 mb-5 ">
                 <div class="card justify-content-center text-center">
                     <img class="card-img-top d-block w-100 px-5 py-3" src="./images/welding.png" alt="Soldadura">
@@ -154,17 +140,57 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="container-fluid mt-auto py-5">
-        <div class="px-4 px-lg-5">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <h2 class="footer-heading">Industrias PLAV</h2>
+                    <p class="menu">
+                        <a href="./index.html">Inicio</a>
+                        <a href="./sections/servicios.html">Servicios</a>
+                        <a href="./sections/proyectos.html">Proyectos</a>
+                        <a href="./sections/nosotros.html">Nosotros</a>
+                        <a href="./sections/contacto.html">Contacto</a>
+                    </p>
+                    <ul class="footer-social p-0">
+                        <li>
+                            <a href="https://twitter.com/" target="_blank" data-toggle="tooltip" data-placement="top"
+                                title="Twitter">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" data-toggle="tooltip"
+                                data-placement="top" title="Facebook">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank" data-toggle="tooltip"
+                                data-placement="top" title="Linkedin">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">
+                        Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!--Incluyendo Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

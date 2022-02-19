@@ -84,7 +84,7 @@
                             <label for="message">Su mensaje</label>
                         </div>
                         <!-- Botón-->
-                        <div class="d-grid"><button class="boton boton--personalizado1 btn-lg enabled" id="submitButton"
+                        <div class="d-grid"><button class="boton boton--rojo btn-lg enabled" id="submitButton"
                                 type="submit">Enviar</button></div>
                     </form>
                 </div>
@@ -97,7 +97,7 @@
                         <h3 class="card-title">O puedes visitarnos en</h3>
                         <p class="card-text">C. 52 207, Prados San Vicente, San Luis Potosí, S.L.P.</p>
                         <a href="https://www.google.com/maps/place/INDUSTRIAS+PLAV,+S+DE+RL+DE+CV/@22.128599,-100.91782,15z/data=!4m5!3m4!1s0x0:0x89c466a53f5f3d5!8m2!3d22.1285834!4d-100.9177328?hl=es-419"
-                            class="boton boton--personalizado2">Ver en Maps</a>
+                            target="_blank" class="boton boton--rojo">Ver en Maps</a>
                     </div>
                     <div class="map-responsive card-img-bottom">
                         <iframe
@@ -109,17 +109,57 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="container-fluid mt-auto py-5">
-        <div class="px-4 px-lg-5">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <h2 class="footer-heading">Industrias PLAV</h2>
+                    <p class="menu">
+                        <a href="../index.html">Inicio</a>
+                        <a href="../sections/servicios.html">Servicios</a>
+                        <a href="../sections/proyectos.html">Proyectos</a>
+                        <a href="../sections/nosotros.html">Nosotros</a>
+                        <a href="../sections/contacto.html">Contacto</a>
+                    </p>
+                    <ul class="footer-social p-0">
+                        <li>
+                            <a href="https://twitter.com/" target="_blank" data-toggle="tooltip" data-placement="top"
+                                title="Twitter">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" data-toggle="tooltip"
+                                data-placement="top" title="Facebook">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank" data-toggle="tooltip"
+                                data-placement="top" title="Linkedin">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">
+                        Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!--Incluyendo Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
