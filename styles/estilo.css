@@ -163,56 +163,91 @@ footer .footer-social li a:hover {
   color: #111;
 }
 
-.work {
+.grid {
+  margin: 10px 20px 40px;
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "grid1 grid2 grid3" "grid4 grid5 grid6";
+  -ms-grid-rows: 250px 250px;
+      grid-template-rows: 250px 250px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.grid .item {
   overflow: hidden;
-  border-radius: 6px;
-  margin: 10px 0;
-  cursor: pointer;
+  border-radius: 10px;
+  cursor: crosshair;
   position: relative;
 }
 
-.work img {
+.grid .item img {
   width: 100%;
   height: 100%;
+  margin: 2px;
+  border-radius: 12px;
   -webkit-transition: .4s linear;
   transition: .4s linear;
 }
 
-.work::before {
-  content: "";
+.grid .item .info {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: rgba(200, 200, 200, 0.3);
-  -webkit-transition: .2s linear;
-  transition: .2s linear;
-  opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-
-.work .info {
-  position: absolute;
-  z-index: 2;
   bottom: 40px;
-  left: 40px;
-  color: #fff;
+  left: 60px;
+  color: #e9e9e9;
   -webkit-transition: .4s linear;
   transition: .4s linear;
   opacity: 0;
 }
 
-.work:hover img {
-  -webkit-transform: scale(1.6) rotate(25deg);
-          transform: scale(1.6) rotate(25deg);
+.grid .item:hover img {
+  -webkit-transform: scale(1.2) rotate(5deg);
+          transform: scale(1.2) rotate(5deg);
+  opacity: 0.65;
 }
 
-.work:hover::before,
-.work:hover .info {
+.grid .item:hover .info {
   opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.grid .grid_1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: grid1;
+}
+
+.grid .grid_2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: grid2;
+}
+
+.grid .grid_3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: grid3;
+}
+
+.grid .grid_4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: grid4;
+}
+
+.grid .grid_5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: grid5;
+}
+
+.grid .grid_6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: grid6;
 }
 
 .about-section {
@@ -356,6 +391,15 @@ footer .footer-social li a:hover {
   .post {
     width: calc(min(600px, 100%));
   }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "grid1 grid2" "grid3 grid4" "grid5 grid6";
+    -ms-grid-rows: 250px 250px 250px;
+        grid-template-rows: 250px 250px 250px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -364,6 +408,13 @@ footer .footer-social li a:hover {
   }
   .inner-container {
     padding: 60px;
+  }
+  .grid {
+        grid-template-areas: "grid1" "grid2 " "grid3" "grid4" "grid5" "grid6";
+    -ms-grid-rows: (300px)[6];
+        grid-template-rows: repeat(6, 300px);
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
