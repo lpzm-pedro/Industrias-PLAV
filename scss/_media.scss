@@ -40,13 +40,14 @@
     }
 
     .grid {
-        grid-template-areas: "grid1"
-            "grid2 "
+        grid-template-areas:
+            "grid1"
+            "grid2"
             "grid3"
             "grid4"
             "grid5"
             "grid6";
-        grid-template-rows: repeat(6, 300px);
+        grid-template-rows: 300px;
         grid-template-columns: auto;
 
     }
