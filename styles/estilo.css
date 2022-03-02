@@ -164,8 +164,6 @@ footer .footer-social li a:hover {
 }
 
 .grid {
-  margin: 10px 20px 40px;
-  padding: 10px;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "grid1 grid2 grid3" "grid4 grid5 grid6";
