@@ -1,15 +1,22 @@
 //Definiendo variables colores
-$blanco:rgb(233, 233, 233);
-$rojoLight:rgb(200, 0, 0);
-$rojoStrong:rgb(134, 0, 0);
-$grisLight:rgb(200, 200, 200);
-$grisStrong:rgb(90, 90, 90);
-$grisTransparent:rgba(200, 200, 200, 0.3);
+$venetian-red: #c8161cff;
+$maximum-red: #dc181fff;
+$ghost-white: #f7f7ffff;
+$gainsboro: #d2ddde;
+$opal: #adc2bcff;
+$battleship-grey: #808a87ff;
+$nickel: #696e6dff;
+$davys-grey: #525252ff;
+$jet: #292929ff;
+$black: #000000ff;
 
+$blanco: $ghost-white;
+$rojoLight: $maximum-red;
+$rojoStrong:$venetian-red;
+$grisLight: $gainsboro;
+$grisStrong: $nickel;
+$grisTransparent: $davys-grey;
 
-
-
-
-$colorBody: $blanco;
-$colorHeader:#696e6d;
-$colorFooter:#121212;
+$colorBody: $gainsboro;
+$colorHeader: $battleship-grey;
+$colorFooter: $black;
