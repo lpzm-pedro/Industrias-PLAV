@@ -34,7 +34,7 @@ footer {
     }
 
     p {
-        color: rgba(255, 255, 255, .3);
+        color: $grisTransparent;
     }
 
     .footer-heading {
@@ -52,7 +52,7 @@ footer {
         margin-bottom: 30px;
 
         a {
-            color: rgba(255, 255, 255, .6);
+            color: $battleship-grey;
             margin: 0 10px;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -84,7 +84,7 @@ footer {
                 }
 
                 &:hover {
-                    color: white;
+                    color: $blanco;
                 }
             }
         }

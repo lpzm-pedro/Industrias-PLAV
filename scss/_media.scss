@@ -1,6 +1,6 @@
 @media screen and (max-width:1200px) {
     .about-section {
-        background-size: 100%;
+        background-size: 100% 100%;
         padding: 100px 40px;
     }
 
@@ -14,8 +14,13 @@
         justify-content: space-around;
     }
 
-    .post {
-        width: calc(min(600px, 100%));
+    .blog-posts {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .post {
+            width: calc(min(600px, 100%));
+        }
     }
 
     .grid {
@@ -37,6 +42,15 @@
 
     .inner-container {
         padding: 60px;
+    }
+
+    .post {
+        pointer-events: none;
+
+        .post-img {
+            display: none;
+
+        }
     }
 
     .grid {
