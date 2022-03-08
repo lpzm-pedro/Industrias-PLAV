@@ -11,17 +11,25 @@ body {
 
     nav {
         background-color: $colorHeader;
-    }
-}
 
-a {
-    transition: .3s all ease;
+        .enlace {
+            display: block;
+            color: $davys-grey;
+            padding: .5rem .5rem;
+            text-decoration: none;
 
-    &:hover,
-    &:focus {
-        text-decoration: none !important;
-        outline: none !important;
+            &:hover {
+                color: $jet;
+            }
+        }
+
+        .activo {
+            color: $black;
+            pointer-events: none;
+        }
     }
+
+
 }
 
 footer {
@@ -39,7 +47,7 @@ footer {
 
     .footer-heading {
         font-size: 30px;
-        color: $blanco;
+        color: $battleship-grey;
         font-weight: 700;
         margin-bottom: 30px;
 

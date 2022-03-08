@@ -21,53 +21,49 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <!--Barra de navegación-->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid px-4">
-            <!--Logo-->
             <a class="navbar-brand" href="../index.html">
                 <img src="../images/logo.png" alt="Industrias PLAV">
             </a>
-            <!--Botón collapsable-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <ion-icon name="grid" size="large"></ion-icon>
             </button>
-            <!--Elementos navegador-->
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 fw-bold">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="enlace " aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
+                        <a class="enlace activo" href="../sections/servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                        <a class="enlace" href="../sections/proyectos.html">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        <a class="enlace" href="../sections/nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <a class="enlace" href="../sections/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--Banner-->
-    <header class="banner">
-        <div class="container h-100">
+
+    <div class="banner" style="background-image: url(../images/banner-maquinados.jpg);">
+        <div class=" container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
                     <h1 class="fw-bold">Servicios de Maquinado</h1>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
-    <main class="container">
-        <!--Tarjeta 1-->
+    <div class="container">
         <div class="my-4" data-aos="fade-right" data-aos-duration="1000">
             <div class="card mb-3">
                 <div class="row g-0 align-items-center">
@@ -96,7 +92,6 @@
                 </div>
             </div>
         </div>
-        <!--Tarjeta 2-->
         <div class="my-3" data-aos="fade-left" data-aos-duration="1000">
             <div class="card mb-3">
                 <div class="row g-0 align-items-center">
@@ -129,7 +124,6 @@
                 </div>
             </div>
         </div>
-        <!--Tarjeta 3-->
         <div class="my-3" data-aos="fade-right" data-aos-duration="1000">
             <div class="card mb-3">
                 <div class="row g-0 align-items-center">
@@ -155,7 +149,42 @@
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+
+    <div class="banner" style=" background-image: url(../images/3d.jpg); ">
+        <div class=" container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="fw-bold">Impresión 3D</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="my-4" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card mb-3">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-4">
+                        <img src="../images/3d-machine.jpg" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Impresión en 3D</h5>
+                            <p class="card-text">
+                                La impresión 3D puede producir estructuras sumamente complejas o
+                                espacios interiores vacíos que serían imposible de lograrlos usando procesos no
+                                aditivos. Por esto las impresoras 3D son una gran ayuda para reducir costos de
+                                materiales y tiempos de producción durante el proceso de prototipo, en la fabricación de
+                                piezas producción de bajo volumen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <footer>
         <div class="container">
