@@ -1,13 +1,15 @@
 @media screen and (max-width:1200px) {
     .about-section {
+        height: 600px;
         background-size: 100% 100%;
-        padding: 100px 40px;
+        padding: 0px 40px;
     }
 
     .inner-container {
+        height: 100%;
         width: 100%;
-        padding: 80px;
         border-radius: 50px;
+
     }
 
     .blog-posts {
@@ -42,6 +44,11 @@
 
     .inner-container {
         padding: 60px;
+
+        p {
+            font-size: medium;
+        }
+
     }
 
     .post {

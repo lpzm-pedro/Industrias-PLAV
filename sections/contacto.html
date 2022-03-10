@@ -17,46 +17,44 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <!--Barra de navegación-->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid px-4">
-            <!--Logo-->
             <a class="navbar-brand" href="../index.html">
                 <img src="../images/logo.png" alt="Industrias PLAV">
             </a>
-            <!--Botón collapsable-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <ion-icon name="grid" size="large"></ion-icon>
             </button>
-            <!--Elementos navegador-->
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 fw-bold">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="enlace " aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                        <a class="enlace" href="../sections/servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                        <a class="enlace" href="../sections/proyectos.html">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        <a class="enlace" href="../sections/nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                        <a class="enlace activo" href="../sections/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <main class="container py-5">
         <div class="row justify-content-center align-items-center">
             <!--Columna izquierda-->
             <div class="col-lg-5">
                 <!-- Contact form-->
-                <div class="bg-light rounded-3 py-5 px-2 my-2 mx-2">
+                <div class="bg-light rounded py-5 px-2 m-2" style="border: 1px black solid;">
                     <div class="text-center mb-5">
                         <h1 class="fw-bolder">Contacto</h1>
                         <p class="lead fw-normal text-muted mb-0">Lo atenderemos a la brevedad</p>

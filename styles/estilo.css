@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,21 +7,27 @@
 }
 
 body {
-  background-color: #d2ddde;
+  background-color: #f7f7ffff;
 }
 
 body nav {
-  background-color: #808a87ff;
+  background-color: #d2ddde;
 }
 
-a {
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+body nav .enlace {
+  display: block;
+  color: #525252ff;
+  padding: .5rem .5rem;
+  text-decoration: none;
 }
 
-a:hover, a:focus {
-  text-decoration: none !important;
-  outline: none !important;
+body nav .enlace:hover {
+  color: #292929ff;
+}
+
+body nav .activo {
+  color: #000000ff;
+  pointer-events: none;
 }
 
 footer {
@@ -39,7 +46,7 @@ footer p {
 
 footer .footer-heading {
   font-size: 30px;
-  color: #f7f7ffff;
+  color: #808a87ff;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -91,12 +98,12 @@ footer .footer-social li a:hover {
 
 .bienvenida h1 {
   font-size: xx-large;
-  color: #860000;
+  color: #c8161cff;
 }
 
 .bienvenida .subtexto {
   font-size: large;
-  color: #c80000;
+  color: #dc181fff;
 }
 
 .boton, .boton--rojo, .boton--gris, .boton--personalizado1, .boton--personalizado2 {
@@ -147,7 +154,6 @@ footer .footer-social li a:hover {
 .banner {
   height: 15vh;
   min-height: 300px;
-  background-image: url("../images/banner-maquinados.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -157,10 +163,16 @@ footer .footer-social li a:hover {
   color: white;
 }
 
+h5 {
+  font-size: xx-large;
+  color: #860000;
+}
+
 .section-title {
   text-align: center;
-  font-size: 30px;
-  color: #000000ff;
+  font-size: xx-large;
+  color: #c8161cff;
+  text-transform: uppercase;
 }
 
 .grid {
@@ -192,9 +204,9 @@ footer .footer-social li a:hover {
 
 .grid .item .info {
   position: absolute;
-  bottom: 40px;
-  left: 60px;
-  color: #f7f7ffff;
+  bottom: 30px;
+  left: 25px;
+  color: #000000ff;
   -webkit-transition: .4s linear;
   transition: .4s linear;
   opacity: 0;
@@ -208,8 +220,8 @@ footer .footer-social li a:hover {
 
 .grid .item:hover .info {
   opacity: 1;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .grid .grid_1 {
@@ -249,7 +261,8 @@ footer .footer-social li a:hover {
 }
 
 .about-section {
-  background: url("../images/banner-maquinados.jpg") no-repeat left;
+  height: 450px;
+  background: url("../images/planta.webp") no-repeat left;
   background-size: 60% 100%;
   background-color: #adc2bcff;
   overflow: hidden;
@@ -257,10 +270,19 @@ footer .footer-social li a:hover {
 }
 
 .inner-container {
+  height: 100%;
   width: 45%;
   float: right;
-  background-color: #f7f7ffff;
+  background-color: #d2ddde;
   border-radius: 0 50px 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .inner-container h1 {
@@ -271,10 +293,9 @@ footer .footer-social li a:hover {
 
 .inner-container p {
   font-size: 20px;
-  color: #696e6dff;
+  color: #292929ff;
   line-height: 25px;
   text-align: justify;
-  margin-bottom: 40px;
 }
 
 .blog-posts {
@@ -368,12 +389,13 @@ footer .footer-social li a:hover {
 
 @media screen and (max-width: 1200px) {
   .about-section {
+    height: 600px;
     background-size: 100% 100%;
-    padding: 100px 40px;
+    padding: 0px 40px;
   }
   .inner-container {
+    height: 100%;
     width: 100%;
-    padding: 80px;
     border-radius: 50px;
   }
   .blog-posts {
@@ -407,6 +429,9 @@ footer .footer-social li a:hover {
   }
   .inner-container {
     padding: 60px;
+  }
+  .inner-container p {
+    font-size: medium;
   }
   .post {
     pointer-events: none;

@@ -1,7 +1,8 @@
 .section-title {
     text-align: center;
-    font-size: 30px;
-    color: $black;
+    font-size: xx-large;
+    color: $venetian-red;
+    text-transform: uppercase;
 }
 
 .grid {
@@ -30,9 +31,9 @@
 
         .info {
             position: absolute;
-            bottom: 40px;
-            left: 60px;
-            color: $blanco;
+            bottom: 30px;
+            left: 25px;
+            color: $black;
             transition: .4s linear;
             opacity: 0;
         }
@@ -46,7 +47,7 @@
 
             .info {
                 opacity: 1;
-                transform: scale(1.5);
+                transform: scale(1.1);
             }
         }
     }
